@@ -1,0 +1,10 @@
+# java
+target/
+
+# idea
+.idea/
+out/
+*.iml
+
+# other
+*.log
