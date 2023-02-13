@@ -32,6 +32,7 @@ import java.util.Set;
  *
  * @author niushuai233
  * @date 2023/1/5 15:54
+ * @since 0.0.1
  */
 public class JTools {
 
@@ -59,6 +60,7 @@ public class JTools {
      * @return 所有工具类的Class
      * @author niushuai233
      * @date 2023/1/5 16:08
+     * @since 0.0.1
      */
     public static Set<Class<?>> getAllUtils() {
         return ClassUtil.scanPackage(ROOT_PACKAGE_NAME, (clazz) -> !clazz.isInterface() && StrUtil.endWith(clazz.getSimpleName(), UTIL));
@@ -69,13 +71,12 @@ public class JTools {
      *
      * @author niushuai233
      * @date 2023/1/5 16:11
+     * @since 0.0.1
      */
     public static void printAllUtils() {
         Set<Class<?>> allUtils = getAllUtils();
         ConsoleTable consoleTable = ConsoleTable.create().addHeader("工具类名", "所在包");
-        allUtils.forEach(item -> {
-            consoleTable.addBody(item.getSimpleName(), item.getPackage().getName());
-        });
+        allUtils.forEach(item -> consoleTable.addBody(item.getSimpleName(), item.getPackage().getName()));
         consoleTable.print();
     }
 }
