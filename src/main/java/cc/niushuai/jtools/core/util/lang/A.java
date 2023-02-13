@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cc.niushuai.jtools.core.util;
+package cc.niushuai.jtools.core.util.lang;
 
 /**
  * <pre>

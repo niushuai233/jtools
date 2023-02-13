@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package cc.niushuai.jtools.core.util;
+package cc.niushuai.jtools.core.util.lang;
 
 /**
  * <pre>
- *  集合工具类
+ *  Bean工具类
  * </pre>
  *
  * @author niushuai233
- * @date 2023/2/13 15:52
+ * @date 2023/2/13 15:53
  * @since 0.0.1
  */
-public class C {
+public class B {
 }
