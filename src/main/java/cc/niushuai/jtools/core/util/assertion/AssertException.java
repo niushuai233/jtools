@@ -29,6 +29,10 @@ public class AssertException extends RuntimeException {
         super(message);
     }
 
+    public AssertException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
     public AssertException(String message, Object... params) {
         super(String.format(message, params));
     }
